@@ -1,0 +1,9 @@
+x = UserAccelerometerData.X;
+x(1)=[]
+x = x(30000:30500)
+subplot(211);
+plot(x);
+xft = fft(x);
+xabs = abs(xft);
+subplot(212);
+plot(xabs);
