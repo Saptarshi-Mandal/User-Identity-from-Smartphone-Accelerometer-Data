@@ -1,4 +1,4 @@
-# User Recognition in Participatory Sensing Systems using Deep Learning
+# User Recognition from Smatphone Accelerometer Data
 
 ## Overview
 This project focuses on identifying users in smartphone-based participatory sensing systems by analyzing accelerometer signals. The core idea is to convert accelerometer signals into 2D spectro-temporal images and use a custom Convolutional Neural Network (CNN) model for classification. The proposed model achieves high accuracy and efficiency, making it suitable for real-world applications.
