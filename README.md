@@ -1,11 +1,5 @@
 # User Recognition from Smatphone Accelerometer Data
 
-## Authors
-- Asif Iqbal Middya
-- Sarbani Roy
-- Saptarshi Mandal
-- Rahul Talukdar
-
 ## Abstract
 This paper presents a novel method for user identification in smartphone-based participatory sensing applications. The method leverages deep learning, specifically a convolutional neural network (CNN), to identify users based on their unique gait patterns captured through smartphone accelerometer sensors. The proposed approach demonstrates superior performance compared to traditional machine learning methods, achieving high accuracy, precision, recall, and F1-score.
 
@@ -46,7 +40,7 @@ The study introduces a robust and privacy-protected approach to user identificat
 - Convolutional Neural Network (CNN)
 - Accelerometer
 
-## Contact
+## Authors
 - **Sarbani Roy**: sarbani.roy@jadavpuruniversity.in
 - **Asif Iqbal Middya**: asifim.rs@jadavpuruniversity.in
 - **Saptarshi Mandal**: m.saptarshi30@gmail.com
