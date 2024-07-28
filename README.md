@@ -14,7 +14,8 @@ This paper presents a novel method for user identification in smartphone-based p
 - **Sensors**: Smartphone-equipped accelerometers.
 
 ### Data Preparation
-- **Pre-processing**: Removal of users with insufficient data, creation of time series windows from accelerometer data.
+- **Pre-processing**: Removal of users with insufficient data, creation of time series windows from accelerometer data
+  - **Feature Extraction** : Statistical Features + FFT Feature
 - **Window Size**: Optimal window size determined to be 225 samples (45 seconds of data at 5 Hz sampling frequency).
 
 ### Model Architecture
