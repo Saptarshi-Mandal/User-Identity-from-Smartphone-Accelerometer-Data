@@ -1,40 +1,57 @@
 # User Recognition from Smatphone Accelerometer Data
 
-## Overview
-This project focuses on identifying users in smartphone-based participatory sensing systems by analyzing accelerometer signals. The core idea is to convert accelerometer signals into 2D spectro-temporal images and use a custom Convolutional Neural Network (CNN) model for classification. The proposed model achieves high accuracy and efficiency, making it suitable for real-world applications.
-
 ## Authors
-- Asif Iqbal Middya, Department of Computer Science and Engineering, Jadavpur University, Kolkata, India
-- Sarbani Roy, Department of Computer Science and Engineering, Jadavpur University, Kolkata, India
-- Saptarshi Mandal, Department of Electrical Engineering, Jadavpur University, Kolkata, India
+- Asif Iqbal Middya
+- Sarbani Roy
+- Saptarshi Mandal
+- Rahul Talukdar
 
 ## Abstract
-Smartphone-based participatory sensing systems require efficient and unobtrusive user identification to ensure data quality and personalized services. This project proposes a deep learning approach to user recognition using accelerometer data, transformed into 2D spectro-temporal images via Short-Term Fourier Transform (STFT). The custom CNN model outperforms baseline methods and other CNN architectures, achieving state-of-the-art performance metrics.
+This paper presents a novel method for user identification in smartphone-based participatory sensing applications. The method leverages deep learning, specifically a convolutional neural network (CNN), to identify users based on their unique gait patterns captured through smartphone accelerometer sensors. The proposed approach demonstrates superior performance compared to traditional machine learning methods, achieving high accuracy, precision, recall, and F1-score.
 
-## Key Features
-- **Deep Learning Approach**: Utilizes a custom CNN model for user recognition.
-- **Spectro-Temporal Representation**: Converts time-series accelerometer data into 2D images using STFT.
-- **High Accuracy**: Achieves 98% accuracy, 96% precision, 98% recall, 96% F1-score, and 0.9995 AUC.
-- **Efficiency**: Lightweight model with only 474,937 parameters, suitable for deployment on smartphones.
-
-## Dataset
-The project uses a real-world benchmark dataset consisting of 60 million accelerometer data samples from 387 users.
+## Introduction
+- **Context**: In participatory sensing systems, identifying the actual data provider is crucial for data accuracy and personalized services.
+- **Problem**: Existing user identification methods (PINs, passwords, biometrics) have limitations in terms of usability and reliability.
+- **Solution**: A deep learning model using accelerometer data for gait-based user identification, ensuring privacy protection.
 
 ## Methodology
-1. **Data Preprocessing**: Accelerometer data is segmented into small windows.
-2. **Transformation**: Each window is converted to a spectro-temporal image using STFT.
-3. **Model Training**: A custom CNN model is trained on the transformed images.
-4. **Evaluation**: The model's performance is compared with baseline methods and other CNN architectures.
+### Data Collection
+- **Dataset**: Real-world accelerometer biometric competition data from 387 users, comprising 60 million data samples.
+- **Sensors**: Smartphone-equipped accelerometers.
 
-## Baseline Methods
-- Multi-layer Perceptron (MLP)
-- K-Nearest Neighbors (KNN)
-- Logistic Regression (LR)
-- Random Forest (RF)
-- Decision Tree (DT)
+### Data Preparation
+- **Pre-processing**: Removal of users with insufficient data, creation of time series windows from accelerometer data.
+- **Window Size**: Optimal window size determined to be 225 samples (45 seconds of data at 5 Hz sampling frequency).
 
-## Performance Comparison
-The proposed CNN model is compared against other CNN architectures such as LeNet-5, AlexNet, and ZFNet, demonstrating superior performance across all metrics.
+### Model Architecture
+- **Deep CNN**: Designed to process the accelerometer data and extract gait features for user identification.
+- **Comparison**: Performance compared with Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Logistic Regression (LR), and K-Nearest Neighbors (KNN).
+
+### Evaluation Metrics
+- **Accuracy**: 98.8%
+- **Precision**: 0.94
+- **Recall**: 0.97
+- **F1-Score**: 0.95
 
 ## Results
-The proposed approach yields better performance than existing methods, making it a promising solution for user recognition in participatory sensing systems.
+The proposed CNN model significantly outperforms the baseline methods, demonstrating its effectiveness for user identification in participatory sensing systems.
+
+## Conclusion
+The study introduces a robust and privacy-protected approach to user identification using deep learning. This method can be seamlessly integrated into participatory sensing applications, providing accurate and reliable user identification without frequent interruptions.
+
+## Keywords
+- User Identification
+- Gait
+- Participatory Sensing
+- Convolutional Neural Network (CNN)
+- Accelerometer
+
+## Contact
+- **Sarbani Roy**: sarbani.roy@jadavpuruniversity.in
+- **Asif Iqbal Middya**: asifim.rs@jadavpuruniversity.in
+- **Saptarshi Mandal**: m.saptarshi30@gmail.com
+- **Rahul Talukdar**: rtalukdar2000@gmail.com
+
+## Citation
+Please cite this paper as:
+Middya, A. I., Roy, S., Mandal, S., & Talukdar, R. (2021). Privacy protected user identification using deep learning for smartphone-based participatory sensing applications. *Neural Computing and Applications*. https://doi.org/10.1007/s00521-021-06319-6
